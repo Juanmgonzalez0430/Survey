@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+    <h1 id="title"> Survey Form </h1>
+    <p id="description"> Infomation request for complete the process </p>
+    </header>
+    <form id="survey-form">
+      
+    <div class="form-group">
+      <label id="name-label" for="name" class="form-input">Name</label>
+      <input
+      type="text"
+      id="name"
+      name="Name"
+      class="form-control"
+      placeholder="ENTER YOUR NAME."
+       min="4" 
+       max="20" 
+       size="20"
+       required
+      >
+      <div class="form-group">
+      <label id="email-label" for="email" class="form-input">Email</label>
+      <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      placeholder="ENTER YOUR EMAIL."
+       min="4" 
+       max="30" 
+       size="30"
+       required
+      >
+      
+      <div class="form-group">
+      <label id="number-label" for="number" class="form-input">Age</label>
+      <input
+      type="number"
+      id="number"
+      name="Age"
+      class="form-control"
+      placeholder="AGE"
+       min="1" 
+       max="100" 
+       size="100"
+      >
+<div class="form-group">
+  <p> Marital Status </p>
+  <select id="dropdown" name="option" class="form-ground" required>
+    <option disabled selected value>Select Status</option>
+      <option value="Married">Married</option>
+      <option value="Widowed">Widowed</option>
+      <option value="Separated">Separated</option>
+      <option value="Divorced">Divorced</option>
+      <option value="Single">Single</option>
+  </select>
+  </div>    
+      
+      <div class="form-group">
+        <label>
+          <p> Where Are You From?</p>
+          <input
+              name="where-from"
+              value="south-america"
+              type="radio"
+              class="input-radio"
+              checked
+            />South-america</label
+            >
+        <br>
+        <label>
+          <input
+              name="where-from"
+              value="north-america"
+              type="radio"
+              class="input-radio"
+            />North-america</label
+          >
+          <br>
+          <label>
+          <input
+              name="where-from"
+              value="europe"
+              type="radio"
+              class="input-radio"
+            />Europe</label
+          >
+        </div>
+  <div class="form-group">
+    <p>Languages
+      <span class="clue">(you can choose one or more)<span></p>
+      <label
+            ><input
+              name="languages"
+              value="spanish"
+              type="checkbox"
+              class="input-checkbox"
+            />Spanish</label
+          >
+<br>
+          <label
+            ><input
+              name="languages"
+              value="english"
+              type="checkbox"
+              class="input-checkbox"
+            />English</label
+          >
+<br>
+          <label
+            ><input
+              name="languages"
+              value="portuguese"
+              type="checkbox"
+              class="input-checkbox"
+            />Portuguese</label
+          >
+<br>
+<label
+            ><input
+              name="languages"
+              value="french"
+              type="checkbox"
+              class="input-checkbox"
+            />French</label
+          >
+          <br>
+</div>
+ <div class="from-group">
+   <p>Additional infomation:</p>
+   <textarea
+   id="information"
+   name="information"
+   class="input-textarea"
+   placeholder="Enter your information here..."
+   ></textarea>
+
+   <div class="from-group">
+      <button id="submit" type="submit" class="submit-button"> Submit </button>
+</div>
+      </div>
+      </div>
+      </div>
+      </form>
+    </body>
